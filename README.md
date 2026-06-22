@@ -23,8 +23,8 @@ Site de catálogo de filmes desenvolvido como atividade avaliativa da disciplina
 - Mensagem de sucesso exibida após o envio do formulário, simulando o envio dos dados para um banco de dados (armazenamento no localStorage).
 
 ## Integrantes
-- Nome do(a) integrante 1
-- Nome do(a) integrante 2 (se houver)
+- Lohanna Pereira dos Santos
+- Livia Moreira Parra
 
 ## Link para o GitHub Pages
-- (adicionar aqui o link após a publicação)
+- https://loh-santos.github.io/cinfy/
