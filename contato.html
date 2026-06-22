@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinefy - Contato</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cine<span>fy</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="filmes.html">Catálogo</a></li>
+                    <li><a href="contato.html" class="ativo">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Fale com a gente</h2>
+            <p>Tem alguma sugestão de filme ou encontrou algum problema no site? Envie sua mensagem abaixo.</p>
+
+            <div class="mensagem-sucesso" id="mensagem-sucesso">
+                Mensagem enviada com sucesso! Em breve entraremos em contato.
+            </div>
+
+            <form id="form-contato" class="form-contato" novalidate>
+
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    <span class="mensagem-erro">Por favor, informe seu nome.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu e-mail">
+                    <span class="mensagem-erro">Por favor, informe um e-mail válido.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="selecione">Selecione um assunto</option>
+                        <option value="sugestao">Sugestão de filme</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="problema">Problema no site</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <span class="mensagem-erro">Por favor, selecione um assunto.</span>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea>
+                    <span class="mensagem-erro">Por favor, escreva uma mensagem.</span>
+                </div>
+
+                <button type="submit" class="botao">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Cinefy &copy; 2026 - Projeto acadêmico desenvolvido com HTML, CSS e Javascript puro.</p>
+        </div>
+    </footer>
+
+    <script src="js/contato.js"></script>
+</body>
+</html>

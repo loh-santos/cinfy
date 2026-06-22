@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinefy - Catálogo</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Cine<span>fy</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="filmes.html" class="ativo">Catálogo</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Catálogo de filmes</h2>
+            <p>Pesquise pelo nome do filme ou filtre por gênero. Clique em um filme para ver mais detalhes.</p>
+
+            <div class="filtros">
+                <input type="text" id="busca-filme" placeholder="Buscar filme pelo título...">
+                <select id="filtro-genero">
+                    <option value="todos">Todos os gêneros</option>
+                </select>
+            </div>
+
+            <div id="grade-filmes"></div>
+        </div>
+    </section>
+
+    <!-- Modal com detalhes do filme -->
+    <div class="modal-fundo" id="modal-filme">
+        <div class="modal-caixa">
+            <button class="modal-fechar" id="modal-fechar">&times;</button>
+            <div id="modal-conteudo"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Cinefy &copy; 2026 - Projeto acadêmico desenvolvido com HTML, CSS e Javascript puro.</p>
+        </div>
+    </footer>
+
+    <script src="js/filmes.js"></script>
+</body>
+</html>
